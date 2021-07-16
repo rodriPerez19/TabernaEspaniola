@@ -1,0 +1,141 @@
+:root {
+    --colorPagina: #da8a13;
+    --colorPaginaOscuro: #ca8215;
+}
+
+.colorPagina{
+    background-color: #da8a13;
+    border-color: #da8a13;
+}
+.colorPaginaOscuro{
+    background-color: #ca8215;
+    border-color: #ca8215;
+    color: white;
+}
+
+.links{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.contenedor{
+    width: 90%;
+    margin: auto;
+    height: 500px;
+    padding: 20px;
+    font-size: 18px;
+    border: 2px solid gray;
+}
+
+.contenedor .separador{
+    margin-top: 30px;
+}
+
+.contenedor .row-0{
+    display: grid;
+    grid-gap: 20px;
+    /**border: 3px solid rgb(61, 233, 204);**/
+    grid-template-columns:  minmax(60px,1fr) minmax(60px,1fr);
+}
+
+.contenedor .row-00{
+    display: grid;
+    grid-gap: 20px;
+    /**border: 3px solid rgb(61, 233, 204);**/
+    grid-template-columns:  minmax(60px,1fr);
+}
+
+.row-0 .botones{
+    grid-column: 2/3;
+}
+.contenedor .row-1{
+    display: grid;
+    grid-gap: 20px;
+    /**border: 3px solid #ff8000;**/
+    grid-template-columns: minmax(60px,150px) minmax(150px,1fr);
+}
+.contenedor textarea{
+    grid-column: span 2;
+}
+
+.contenedor .row-2{
+    display: grid;
+    /**border: 3px solid #ff8000;**/
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30px 50px;
+}
+
+.tabla{
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    font-size: 18px;
+
+    display: grid;
+    grid-template-columns: minmax(200px,1fr) minmax(300px,2fr) minmax(50px, 80px) minmax(150px, 150px);
+    grid-template-rows: 70px;
+
+    grid-auto-rows: minmax(60px,auto);
+}
+
+
+.tabla .producto a{
+    color: var(--colorPagina);
+
+}
+
+.tabla .encabezado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform:uppercase;
+
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabla .producto{
+    grid-column: 1/2;
+    border: 1px solid gray;
+
+    overflow:auto
+}
+
+.tabla .descripcion{
+    grid-column:2/3;
+    border: 1px solid gray;
+    overflow:auto;
+    padding: 10px;
+}
+
+.tabla .mostrar {
+    grid-column: 3/4;
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+.tabla .acciones {
+    grid-column: 4/5;
+    border: 1px solid gray;
+    padding: 10px;
+
+}
+
+.tabla .acciones .btn-outline-primary{
+    margin-right: 5px ;
+}
+
+.tabla .acciones .btn-outline-danger{
+    margin-left: 5px ;
+}
+
+
+
+
+
+
